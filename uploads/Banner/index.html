@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>Test dla bannerka</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#banner-width').change(function() {
+                    var width = $('#banner-width').val();
+                    $('#banner-code').val('<div style="width: ' + width + 'px">Test</div>');
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <form action="." method="get" accept-charset="utf-8">
+            <select name="banner-width" id="banner-width">
+                <option value="100" selected="selected">100px</option>
+                <option value="200">200px</option>
+                <option value="300">300px</option>
+            </select>
+            <textarea name="banner-code" id="banner-code" rows="8" cols="40"><div style="width: 100px">Test</div></textarea>
+        </form>
+    </body>
+    
+</html>
